@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-#Generuojame dvimačius duomenis, vienas duomenų rinkinys yra iš intervalo [1,5],
-#kitas iš intervalo [6,10].
+#Generuojame dvimačius duomenis, vienas duomenų rinkinys yra iš intervalo [0,5],
+#kitas iš intervalo [5,10].
 np.random.seed(763)
 points1 = np.random.uniform(0,5, (10,2))
 points2 = np.random.uniform(5,10, (10,2))
@@ -182,4 +182,5 @@ plt.xlabel("a")
 plt.ylabel("f(a)")
 plt.savefig("sigmoidine.png", dpi=300, bbox_inches="tight")
 plt.grid(True)
+
 plt.show()
